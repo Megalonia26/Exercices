@@ -1,1 +1,31 @@
+def tableDeVerite(e):
+   - Définir une fonction `tableDeVerite` qui prend une expression booléenne `e`.
+   - Identifier les variables dans l'expression et leurs négations.
+   - Générer toutes les combinaisons possibles de valeurs de vérité pour les variables.
+   - Évaluer l'expression pour chaque combinaison de valeurs de vérité et stocker les résultats dans une table.
 
+def algebreDeBool(v):
+   - Définir une fonction `algebreDeBool` qui prend une valeur booléenne `v`.
+   - Convertir la valeur booléenne en sa représentation sous forme de chaîne équivalente ('1' pour Vrai et '0' pour Faux).
+
+ def formCanoniques1_2(e):
+   - Définir une fonction `formCanoniques1_2` qui prend une expression booléenne `e`.
+   - Appeler `tableDeVerite` pour générer la table de vérité pour l'expression.
+   - Itérer sur la table de vérité :
+     - Pour chaque ligne où le résultat est Vrai, générer le minterme (terme produit) en concaténant les valeurs de vérité des variables.
+     - Pour chaque ligne où le résultat est Faux, générer le maxterm (terme somme) en concaténant la négation des valeurs de vérité des variables.
+   - Renvoyer les listes de mintermes et de maxtermes.
+
+def main():
+   - Définir la fonction principale.
+   - Demander à l'utilisateur d'entrer une expression booléenne `e`.
+   - Extraire toutes les variables et les variables négatives de l'expression.
+   - Imprimer l'en-tête de la table de vérité.
+   - Imprimer la ligne de séparation.
+   - Itérer sur chaque ligne de la table de vérité :
+     - Évaluer la valeur de vérité de chaque variable et de sa négation pour la ligne actuelle.
+     - Imprimer les valeurs des variables, des variables négatives et le résultat de l'expression pour la ligne actuelle.
+   - Calculer et imprimer les premières et deuxièmes formes canoniques à l'aide de la fonction `formCanoniques1_2`.
+
+def Exécuter main():
+   - Vérifier si le script est exécuté directement (`__name__ == "__main__"`) et exécuter la fonction `main()`.
