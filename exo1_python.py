@@ -1,3 +1,4 @@
+#Rakotoarisoa finoana charles
 from itertools import product
 
 def tableDeVerite(e):
